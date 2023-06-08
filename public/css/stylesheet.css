@@ -1,0 +1,679 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  margin: 0%;
+  padding: 0%;
+}
+header {
+    background-color: #EAC926;
+    margin: auto;
+    padding: 1% 0% 0% 0%;
+    width: 100%;
+    
+    
+
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    margin: 0%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .logoMercadoLiebre { 
+        grid-area: 1 / 1 / 2 / 2;
+        height: 10vh;
+        padding: 10px;
+        margin-left: 10vw;
+        
+
+    }
+
+    .imglogo {
+        height: 90%
+        
+       }
+    .buscador { 
+        grid-area: 1 / 2 / 2 / 3; 
+        height: 10vh;
+    
+    }
+    .compraEnCuotas { 
+        grid-area: 1 / 3 / 2 / 4; 
+        height: 10vh;
+        display: flex;
+    }
+
+    #input { 
+        width: 100%;
+        height: 8vh;
+        border-radius: 10px;
+        border: 1px solid #ada9a9;
+        color: gray;
+        padding: 1% 1%;
+        grid: center;
+        margin: 1% 1%;
+        background-image: url(https://www.pngarea.com/pngm/109/1164446_searchicon-png-search-icon-png-download.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        outline: 0;
+        background-position: 12px;
+        background-size: 16px;
+      } 
+    
+    .compraEnCuotas p {
+        padding: 1%;
+        margin: auto 1%;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+    .compraEnCuotas img {
+        height: 50%;
+        padding: 1% 1% 1% 8%;
+        margin: auto 1%;   
+        grid: center;  
+    }
+
+    .navHeader {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0% 10% 0% 10%;
+        }
+        
+    .nav { 
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+        background-color: #0d2dbd;
+        color: white;
+      }
+
+      .topnav-right i:hover {
+        color: white;
+      }
+
+      .topnav-right {
+        float: right;
+      }
+
+      .banner {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .imgBanner { 
+            grid-area: 1 / 1 / 2 / 2; 
+            width: 100vw; 
+        }
+
+        .imgBanner img {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        .tituloProductos {
+          font-family: Arial, Helvetica, sans-serif;
+          margin-left: 10vw;
+          margin-bottom: 3vh;
+          margin-top: 3vh;
+          
+    
+        }
+
+        .grillaProductos {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: 1fr;
+          grid-column-gap: 10px;
+          grid-row-gap: 0px;
+          width: 80vw;
+          margin: auto;
+          padding-bottom: 3%;
+          
+          }
+
+          .card {
+            box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
+          .card1 {
+            display: none;
+          }
+          
+          .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          }
+          
+          .container {
+            padding: 2px 16px;
+
+          }
+
+       .container h4 {
+            font-size: 24px;
+            margin: 2%;
+            padding: 0;
+            display: inline-block;
+            float: left;
+            
+          }
+
+        .container p {
+          color: #48ad34;
+          margin: 3% 0% 5% 3%;
+          padding: 0;
+          font-weight: bold;
+
+        }
+
+        .container i {
+          display: inline-block;
+          float: right;
+          height: 5vh;
+          margin-top: 5%;
+          margin-right: 10%;
+        }
+
+          .card img {
+            width: 100%;
+      
+          }
+
+          #celu {
+            width: 90%;
+            margin: 5%;
+          }
+
+          #pc {
+            width: 90%;
+            margin: 5%;
+          }
+
+          #tv {
+            width: 90%;
+            margin: 5%;
+          }
+
+          .sectionItems {
+            background-color: rgb(230, 230, 230);
+            margin: 0%;
+            padding: 0%;
+            width: 100vw;
+          }
+          .items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 30px;
+            grid-row-gap: 0px;
+            padding: 2%;
+            width: 90vw;
+            margin: auto;
+
+
+
+
+            }
+
+            .individualItem {
+              text-align: center;
+              font-family: Arial, Helvetica, sans-serif;
+              width: 90%;
+              margin: 5%;
+              color: rgb(100,100,100);
+            }
+
+            .individualItem h2 {
+              font-size: 26px;
+              font-weight: 500;
+            }
+
+            .individualItem p {
+              font-size: 18px;
+            }
+
+            footer {
+              background-color: rgb(230,230,230);
+              font-size: 10px;
+              font-family: Arial, Helvetica, sans-serif;
+              border-top: solid 1px lightgray;
+              height: 5vh;
+              margin: auto;
+
+            }
+
+            footer p {
+              margin-left: 8vw;
+              margin-top: 2vh;
+            }
+
+            .mobileHeader {
+              display: none;
+            }
+
+            #inputLogin { 
+              width: 60%;
+              height: 8vh;
+              border-radius: 10px;
+              border: 1px solid #ada9a9;
+              color: gray;
+              padding: 1% 1%;
+              margin: 1% 1%;
+              background-size: contain;
+              outline: 0;
+              background-position: 12px;
+              background-size: 16px;
+            } 
+
+            .login {
+              width: 100%;
+              margin: auto;
+              padding-top: 2vw;
+              background-color: lightgrey;
+              padding-bottom: 5vw;
+              align-content: center;
+            }
+
+            .loginDiv {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+
+            .loginDiv > h2 {
+              font-family: Arial, Helvetica, sans-serif;
+              color: rgb(50,50,50);
+            }
+
+            #button {
+              width: 60%;
+              height: 8vh;
+              border-radius: 6px;
+              border: 1px solid #ada9a9;
+              color: white;
+              background-color: #0d2dbd;
+              padding: 1% 1%;
+              margin: 1% 1%;
+              background-size: contain;
+              outline: 0;
+              background-position: 12px;
+              background-size: 16px;
+              font-weight: 600;
+              align-items: center;
+              align-self: center;
+            }
+
+            #button > a {
+              color: white;
+              text-decoration: none;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .checkerbox {
+              margin-bottom: 1%;
+            }
+
+            #button:hover {
+              background-color: purple;
+            }
+
+            .suscribirse {
+              font-family: Arial, Helvetica, sans-serif;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-top: 2vw;
+    
+            }
+
+            .formSus {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+              margin-bottom: 2%;
+              
+            }
+
+            .formSuscripcion {
+              width: 60%;
+              height: 8vh;
+              border-radius: 10px;
+              border: 1px solid #ada9a9;
+              color: gray;
+              padding: 1% 1%;
+              margin: 1% 1%;
+              background-size: contain;
+              outline: 0;
+              background-position: 12px;
+              background-size: 16px;
+            }
+
+            .radioCoV {
+                     
+              width: 60%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              margin: 2%;
+                 
+            }
+
+            formRadio {
+              align-self: center;
+              height: 4vh;
+              border-radius: 10px;
+              border: 1px solid #ada9a9;
+              color: gray;
+              padding: 1% 2%;
+              margin: 1% 2%;
+              background-size: contain;
+
+              
+            }
+
+            .labelForm {
+              font-weight: 500;
+              margin: 1%;
+            }
+
+        
+
+
+
+            /*celu*/
+            @media (max-width: 480px) {
+
+              header {
+                background-color: green;
+                margin: 0%;
+                padding: 1% 0% 0% 0%;
+                width: 100%;
+                height: 25vh;
+              
+              }
+
+              #inputLogin { 
+                width: 80%;
+              }
+
+              .header {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-template-rows: repeat(3,1fr);
+              margin: 0%;
+              grid-column-gap: 0px;
+              grid-row-gap: 0px;
+              }
+              
+              .logoMercadoLiebre { 
+                  grid-area: 1 / 1 / 2 / 2;
+                  width: 46vw;
+                  padding: 0vh 1vw;
+                  margin: auto 2vw;
+                  
+          
+              }
+          
+              .imglogo {
+                  width: 100%;
+                  margin: auto;
+                  
+                 }
+              .buscador { 
+                  grid-area: 1 / 2 / 2 / 3; 
+                  width: 46vw;
+                  padding: 0vh 2vw;
+                  margin: auto;
+                  
+              
+              }
+
+            .compraEnCuotas { 
+              grid-area: 2 / 1 / 3 / 3; 
+              width: 100vw;
+              height: 5vh;
+              margin: 0% auto 0% auto;
+              border: 2px black solid;
+              padding: 0%;
+            }
+
+            .compraEnCuotas img {
+              height: 4vh;
+            }
+
+            .navHeader {
+              display: none;
+            }
+
+            .mobileHeader {
+              display:block;
+              grid-area: 3 / 1 / 4 / 3;
+              margin: 0% auto;
+              color: black;
+              padding: 0%;
+    
+            }
+
+            .grillaProductos {
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: 1fr;
+              grid-column-gap: 0px;
+              grid-row-gap: 0px;
+              width: 90vw;
+              margin: auto;
+              padding-bottom: 3%;
+            }
+
+                
+              .card1 { 
+                grid-area: 1 / 1 / 2 / 2;
+                display: block;
+                width: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+               }
+
+               .card1 img {
+                width: 100%;
+               }
+
+              .card {
+                display: none;
+              }
+
+              .items {
+                display: block;
+                padding-top: 2vh;
+              }
+
+              .individualItem {
+                width: 90vw;
+                margin: auto;
+                padding-top: 2vh;
+              }
+
+              .individualItem h2 {
+                font-size: 24px;
+                font-weight: 600;
+              }
+
+              .individualItem p {
+                font-size: 20px;
+              }
+
+            }
+
+
+
+            
+
+            /*tablet*/
+            @media (max-width: 768px) and (min-width: 480px) {
+
+              header {
+                background-color: blue;
+                margin: 0%;
+                padding: 1% 0% 0% 0%;
+                width: 100%;
+            }
+
+
+            .header {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3,1fr);
+            margin: 0%;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            }
+            
+            .logoMercadoLiebre { 
+                grid-area: 1 / 1 / 2 / 2;
+                width: 46vw;
+                padding: 0vh 1vw;
+                margin: auto 2vw;
+                
+        
+            }
+        
+            .imglogo {
+                width: 100%;
+                margin: auto;
+                
+               }
+            .buscador { 
+                grid-area: 1 / 2 / 2 / 3; 
+                width: 46vw;
+                padding: 0vh 2vw;
+                margin: auto;
+                
+            
+            }
+
+          .compraEnCuotas { 
+            grid-area: 2 / 1 / 3 / 3; 
+            height: 3vh;
+            width: 100vw;
+            margin: auto;
+            padding: 0%;
+
+          }
+
+          .compraEnCuotas img {
+            height: 5vh;
+          }
+          
+
+          .navHeader {
+            display: none;
+          }
+
+          .mobileHeader {
+            display:block;
+            grid-area: 3 / 1 / 4 / 3;
+            margin: 0% auto;
+            color: black;
+            padding: 0%;
+            height: 5vh;
+  
+          }
+
+          .grillaProductos {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            width: 90vw;
+            margin: auto;
+            padding-bottom: 3%;
+          }
+
+              
+            .card1 { 
+              grid-area: 1 / 1 / 2 / 2;
+              display: block;
+              width: 100%;
+              font-family: Arial, Helvetica, sans-serif;
+             }
+
+             .card1 img {
+              width: 100%;
+             }
+
+            .card {
+              display: none;
+            }
+
+            .items {
+              display: block;
+              padding-top: 2vh;
+            }
+
+            .individualItem {
+              width: 90vw;
+              margin: auto;
+              padding-top: 2vh;
+            }
+
+            .individualItem h2 {
+              font-size: 24px;
+              font-weight: 600;
+            }
+
+            .individualItem p {
+              font-size: 20px;
+            }
+
+          }
+
+          
